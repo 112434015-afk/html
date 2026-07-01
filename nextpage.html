@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    fieldset {
+      max-width: 400px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Choose your preferences</h2>
+
+<form>
+  <fieldset>
+    <legend>Choose your favorite Web language:</legend>
+    <label><input type="radio" name="language" value="HTML"> HTML</label>
+    <label><input type="radio" name="language" value="CSS"> CSS</label>
+    <label><input type="radio" name="language" value="JavaScript"> JavaScript</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Vehicles you have:</legend>
+    <label><input type="checkbox" name="vehicle1" value="Bike"> I have a bike</label>
+    <label><input type="checkbox" name="vehicle2" value="Car"> I have a car</label>
+    <label><input type="checkbox" name="vehicle3" value="Boat"> I have a boat</label>
+  </fieldset>
+
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
