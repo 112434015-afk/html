@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-    }
-    fieldset {
-      max-width: 400px;
-      padding: 20px;
-      margin-top: 20px;
-    }
-    label {
-      display: block;
-      margin: 8px 0;
-    }
-  </style>
+<title>Preferences - project one</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:url('—Pngtree—green and yellow 3d flame_11758864.jpg') center/cover no-repeat fixed;color:#fff;height:100vh;position:relative;overflow:hidden}
+.container{padding:60px 8%;display:flex;justify-content:space-between;flex-wrap:wrap;position:relative;z-index:10}
+.left{max-width:500px}
+h1{font-size:2.5em;margin-bottom:20px}
+p{color:#ddd;line-height:1.6}
+.form-section{margin-top:30px}
+fieldset{border:1px solid rgba(255,255,255,0.5);padding:20px;border-radius:8px;background:rgba(0,0,0,0.4);margin-top:20px}
+legend{color:#fff;font-weight:bold;padding:0 10px}
+label{display:block;margin:12px 0;color:#ddd;cursor:pointer}
+label input{margin-right:8px;cursor:pointer}
+.form-section button{margin-top:20px;padding:12px 20px;background:#e08e2d;color:#fff;border:none;border-radius:4px;cursor:pointer;font-weight:bold}
+.social{position:absolute;bottom:15px;width:100%;text-align:center}
+.social a{color:#fff;margin:0 8px;text-decoration:none;font-size:1.2em}
+.back-link{color:#e08e2d;text-decoration:none;margin-top:30px;display:inline-block;font-weight:bold}
+.logo{position:absolute;top:20px;left:30px;width:60px;height:60px;z-index:10}
+.logo img{width:100%;height:100%;object-fit:contain}
+</style>
 </head>
 <body>
 
-<h2>Choose your preferences</h2>
+<div class="logo">
+  <img src="ce5db4a8-0e28-474a-baae-db5a16024635.png" alt="Logo">
+</div>
 
-<form>
-  <fieldset>
-    <legend>Choose your favorite Web language:</legend>
-    <label><input type="radio" name="language" value="HTML"> HTML</label>
-    <label><input type="radio" name="language" value="CSS"> CSS</label>
-    <label><input type="radio" name="language" value="JavaScript"> JavaScript</label>
-  </fieldset>
+<div class="container">
+  <div class="left">
+    <h1>Your Preferences</h1>
+    <p>Please choose your preferences below:</p>
+    <form class="form-section">
+      <fieldset>
+        <legend>Choose your favorite Web language:</legend>
+        <label><input type="radio" name="language" value="HTML"> HTML</label>
+        <label><input type="radio" name="language" value="CSS"> CSS</label>
+        <label><input type="radio" name="language" value="JavaScript"> JavaScript</label>
+      </fieldset>
 
-  <fieldset>
-    <legend>Vehicles you have:</legend>
-    <label><input type="checkbox" name="vehicle1" value="Bike"> I have a bike</label>
-    <label><input type="checkbox" name="vehicle2" value="Car"> I have a car</label>
-    <label><input type="checkbox" name="vehicle3" value="Boat"> I have a boat</label>
-  </fieldset>
+      <fieldset>
+        <legend>Vehicles you have:</legend>
+        <label><input type="checkbox" name="vehicle1" value="Bike"> I have a bike</label>
+        <label><input type="checkbox" name="vehicle2" value="Car"> I have a car</label>
+        <label><input type="checkbox" name="vehicle3" value="Boat"> I have a boat</label>
+      </fieldset>
 
-  <br>
-  <input type="submit" value="Submit">
-</form>
+      <button type="submit">Submit</button>
+    </form>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+</div>
+
+<div class="social">
+  <a href="#">FB</a><a href="#">TW</a><a href="#">IG</a><a href="#">YT</a>
+</div>
 
 </body>
 </html>
